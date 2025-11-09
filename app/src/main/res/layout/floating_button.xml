@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="72dp">
+
+    <!-- עיגול צבעוני עם צל -->
+    <View
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@drawable/floating_button_bg"
+        android:elevation="8dp"/>
+
+    <!-- אייקון -->
+    <ImageView
+        android:id="@+id/floating_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_lightning"
+        android:tint="#000000"/>
+
+</FrameLayout>

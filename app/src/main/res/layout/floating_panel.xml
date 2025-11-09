@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panel_background"
+    android:elevation="16dp">
+
+    <!-- כותרת -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1c1c1c"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- לוגו -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⚡ AUTO LINE"
+            android:textSize="20sp"
+            android:textColor="#00ffaa"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- כפתור סגירה -->
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_close"
+            android:background="@drawable/close_button_bg"
+            android:padding="6dp"
+            android:tint="#ef4444"/>
+
+    </LinearLayout>
+
+    <!-- WebView להצגת הממשק -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:background="#0a0a0a"/>
+
+</RelativeLayout>
