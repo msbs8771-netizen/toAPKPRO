@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0a"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- לוגו -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- כותרת -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚡ AUTO LINE"
+        android:textSize="32sp"
+        android:textColor="#00ffaa"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- תת כותרת -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="מערכת ניהול מנויים חכמה"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- סטטוס -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUTO LINE כבוי"
+        android:textSize="18sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="32dp"
+        android:padding="12dp"
+        android:background="@drawable/status_background"/>
+
+    <!-- כפתור הפעלה -->
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="▶ הפעל שירות"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:background="@drawable/button_primary"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- כפתור עצירה -->
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⏹ עצור שירות"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_secondary"
+        android:enabled="false"/>
+
+    <!-- הוראות -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="לחץ 'הפעל שירות' והעיגול הצף יופיע במסך"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</LinearLayout>
